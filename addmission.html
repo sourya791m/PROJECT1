@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admission  - ST. XAVIER'S COLLEGIATE SCHOOL</title>
+    <title>Addmission - ST. XAVIER'S COLLEGIATE SCHOOL</title>
     <style>
         * {
             margin: 0;
@@ -11,17 +12,18 @@
             box-sizing: border-box;
         }
 
+        
         .menu li {
-            margin-top: 1px; 
-            margin-bottom: 1px;
-            margin-left: 200px;
-            margin-right: 200px; 
+             margin-top: 1px; 
+             margin-bottom: 1px;
+             margin-left: 200px;
+             margin-right: 200px;
         }
 
 
         body {
             font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
+            background-color: #f0f0f0;
         }
 
         .header {
@@ -40,8 +42,8 @@
         }
 
         .logo img {
-            width: 100px;
-            height: 100px;
+            width: 100px; /* Adjust as needed */
+            height: 100px; /* Adjust as needed */
             border-radius: 50%;
             margin-right: 10px;
         }
@@ -56,7 +58,7 @@
             display: flex;
             justify-content: center;
             background: burlywood;
-            padding: 10px;
+            padding: 10px ;
         }
 
         nav ul li {
@@ -74,6 +76,136 @@
             color: #ff9900;
         }
 
+        hr {
+            border: none;
+            border-top: 2px solid #6068ff;
+        }
+
+        h2 i {
+            font-style: normal;
+            color: hsl(0, 0%, 0%);
+            font-size: 25px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        button[type="submit"],
+        button[type="reset"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        button[type="reset"] {
+            background-color: #ccc;
+        }
+
+        pre {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        address {
+            margin-top: 20px;
+            text-align: center;
+            color: #555;
+        }
+
+        address img {
+            height: 100px;
+            width: 100px;
+            margin: 20px 0;
+        }
+
+        .developer-contact {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .developer-contact b {
+            color: #007bff;
+        }
+
+        .developer-contact a {
+            text-decoration: none;
+            color: #007bff;
+            margin-left: 5px;
+        }
+
+        /* New design for the form */
+        .form-container {
+            background-color: #fffde3;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .form-container h2 {
+            color: #007bff;
+        }
+
+        .form-container label {
+            font-weight: normal;
+        }
+
+        .form-container select,
+        .form-container input[type="text"],
+        .form-container input[type="number"],
+        .form-container input[type="email"] {
+            margin-bottom: 10px;
+        }
+
+        .form-container input[type="radio"] {
+            margin-right: 5px;
+        }
         .footer {
             text-align: center;
             background-color: #372287;
@@ -84,86 +216,15 @@
         .footer b {
             font-size: 16px;
         }
-
-        .student {
-            background-color: #fff;
-            text-align: center;
-            padding: 40px 0;
-            margin: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        .student h2 {
-            font-size: 28px;
-            color: #372287;
-            margin-bottom: 20px;
-        }
-
-        .student form {
-            max-width: 400px;
-            margin: 0 auto;
-        }
-
-        .student label {
-            display: block;
-            text-align: left;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-
-        .student input[type="text"],
-        .student input[type="email"],
-        .student input[type="tel"],
-        .student textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-
-        .gender {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-
-        .gender label {
-            flex-basis: 100px;
-            text-align: left;
-            font-weight: bold;
-        }
-
-        .gender-options {
-            display: flex;
-            gap: 10px;
-        }
-
-        .student input[type="radio"] {
-            margin-right: 5px;
-        }
-
-        .student input[type="submit"] {
-            background-color: #372287;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .student input[type="submit"]:hover {
-            background-color: #ff9900;
+        .form-container button:hover{
+                        background-color: #ff9900;
         }
     </style>
 </head>
+
 <body>
     <div class="logo">
-        <img src="Xavier.jpg" alt="School Logo" />
+        <img src="Xavier.jpg">
         <h1>ST. XAVIER'S COLLEGIATE SCHOOL</h1>
     </div>
     <div class="header">
@@ -175,43 +236,141 @@
             </ul>
         </nav>
     </div>
-    <div class="student">
-        <h2>Admission Enquiry</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
 
-            <div class="gender">
-                <label>Gender:</label>
-                <div class="gender-options">
-                    <input type="radio" id="male" name="gender" value="Male" required>
-                    <label for="male">Male</label>
+    <hr>
 
-                    <input type="radio" id="female" name="gender" value="Female" required>
-                    <label for="female">Female</label>
+    <h2 align="center"><p padding="30px"><i>Admission Enquiry</i></p></h2>
 
-                    <input type="radio" id="other" name="gender" value="Other" required>
-                    <label for="other">Other</label>
-                </div>
-            </div>
+    <div class="form-container">
+        <h2 align="center">Enter Candidate Details</h2>
+        <form action="https://formspree.io/f/mzblkpdj" method="POST">
 
-            <label for="age">Age:</label>
-            <input type="number" id="age" name="age" required>
+            <label for="Student_Name"> Student Name: </label><br>
+            <input name="Student_Name" id="Student_Name" type="text" placeholder="Student Name" minlength="2"><br>
+            <label for="Date_Of_Birth"> Date of Birth:</label><br>
+            <input name="Date_Of_Birth" id="Date_Of_Birth" type="date" placeholder="dd/mm/yyyy" minlength="2"><br>
+            <label for="Aadhar_Number"> Aadhar Number: </label><br>
+            <input name="Aadhar_Number" id="Aadhar_Number" type="number" placeholder="Aadhar Number"><br>
+            <label for="Blood_Group">Blood Group:</label><br>
+            <select name="Blood_Group" id="Blood_Group"><br>
+                <option>Select your Blood group</option>
+                <option>A+</option>
+                <option>A-</option>
+                <option>B+</option>
+                <option>B-</option>
+                <option>0+</option>
+                <option>O-</option>
+                <option>AB+</option>
+                <option>AB-</option>
+            </select><br>
+            <label for="Admission_Grade">Admission Grade:</label><br>
+            <select name="Admission_Grade" id="Admission_Grade"><br>
+                <option> Class</option>
+                <option value="LKG"> LKG </option>
+                <option value="UKG"> UKG</option>
+                <option value="1"> 1</option>
+                <option value="2"> 2</option>
+                <option value="3"> 3</option>
+                <option value="4"> 4</option>
+                <option value="5"> 5</option>
+                <option value="6"> 6</option>
+                <option value="7"> 7</option>
+                <option value="8"> 8</option>
+            </select><br>
+            <label> Gender:</label>
+            <input type="radio" name="gender" value="male" checked>Male<input type="radio" name="gender" value="female" checked>Female             <input type="radio" name="gender" value="other" checked>Other<br>
+            <label for="Current_Curriculum"> Current Curriculum </label><br>
+            <select name="Current_Curriculum" id="Current_Curriculum">
+                <option>Select Curriculum</option>
+                <option value="ICSE">ICSE</option>
+                <option value="CBSE">CBSE</option>
+                <option value="Jharkhand Board">Jharkhand Board</option>
+                <option value="Other Board">Other Board</option>
+            </select><br>
+            <label for="Religion">Religion:</label><br>
+            <select name="Religion" id="Religion">
+                <option>Select Your Religion</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Muslim">Muslim</option>
+                <option value="Christian">Christian</option>
+                <option value="Sikh">Sikh</option>
+                <option Value="Other's">Other's</option>
+            </select><br>
+            <label for="Cast">Cast</label><br>
+            <select name="Cast" id="Cast">
+                <option>Choose Your Cast</option>
+                <option value="OBC">OBC</option>
+                <option value="GENERAL">GENRAL</option>
+                <option value="ST">ST</option>
+                <option value="SC">SC</option>
+                <option value="OTHER">Other</option>
+            </select><br>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <h3> Contact Details:</h3>
+            <label for="Father's_Name">Father's Name:<label>
+                    <input name="Father's_Name" id="Father's_Name" type="text"  placeholder="Father Name"><br>
+                    <label for="Mother's_Name">Mother's Name:<label>
+                            <input name="Mother's_Name" id="Mother's_Name" type="text"  placeholder="Mother Name"><br>
+                            <label for="Phone_Number"> Phone Number:</label>
+                            <input name="Phone_Number" id="Phone_Number" type="number" placeholder="Enter Your Phone Number"><br>
+                            <label for="Email_Address">Email address:</label>
+                            <input name="Email_Address" id="Email_Address" type="email" placeholder=" Example:- xxxxx111@gmail.com"><br>
 
-            <label for="contact">Contact Number:</label>
-            <input type="tel" id="contact" name="contact" required>
+                            <h3>Address:</h3>
+                            <label>Area/Locality/Street:</label>
+                            <input type="text"  placeholder="Address"><br>
+                            <label>Village/Town/City:
+                                <input type="text"placeholder="Address"> <br>
+                                <label>District</label><br>
+                                <input type="text"placeholder="Address"><br>
+                                <label for="State">State:</label><br>
+                                <select placeholder="Enter State Name" for="State" name="State" id="State">
+                                    <option>Select Your State</option>
+                                        <option value="Andhra Pradesh(Amaravati)">Andhra Pradesh(Amaravati)</option>
+                                        <option value="Arunachal Pradesh(Itanagar)">Arunachal Pradesh(Itanagar)</option>
+                                        <option value="Assam(Dispur)">Assam(Dispur)</option>
+                                        <option value="Bihar(Patna)">Bihar(Patna)</option>
+                                        <option value="Chhattisgarh(Raipur)">Chhattisgarh(Raipur)</option>
+                                        <option value="Goa(Panaji)">Goa(Panaji)</option>
+                                        <option value="Gujarat(Gandhinagar)">Gujarat(Gandhinagar)</option>
+                                        <option value="Haryana(Chandigarh)">Haryana(Chandigarh)</option>
+                                        <option value="Himachal Pradesh(Shimla)">Himachal Pradesh(Shimla)</option>
+                                        <option value="Jharkhand(Ranchi)">Jharkhand(Ranchi)</option>
+                                        <option value="Karnataka(Bangalore)">Karnataka(Bangalore)</option>
+                                        <option value="Kerala(Thiruvananthapuram)">Kerala(Thiruvananthapuram)</option>
+                                        <option value="Madhya Pradesh(Bhopal)">Madhya Pradesh(Bhopal)</option>
+                                        <option value="Maharashtra(Mumbai)">Maharashtra(Mumbai)</option>
+                                        <option value="Manipur(Imphal)">Manipur(Imphal)</option>
+                                        <option value="Meghalaya(Shillong)">Meghalaya(Shillong)</option>
+                                        <option value="Mizoram(Aizawl)">Mizoram(Aizawl)</option>
+                                        <option value="Nagaland(Kohima)">Nagaland(Kohima)</option>
+                                        <option value="Odisha(Bhubaneshwar)">Odisha(Bhubaneshwar)</option>
+                                        <option value="Punjab(Chandigarh)">Punjab(Chandigarh)</option>
+                                        <option value="Rajasthan(Jaipur)">Rajasthan(Jaipur)</option>
+                                        <option value="Sikkim(Gangtok)">Sikkim(Gangtok)</option>
+                                        <option value="Tamil Nadu(Chennai)">Tamil Nadu(Chennai)</option>
+                                        <option value="Telangana(Hyderabad)">Telangana(Hyderabad)</option>
+                                        <option value="Tripura(Agartala)">Tripura(Agartala)</option>
+                                        <option value="Uttarakhand(Dehradun)">Uttarakhand(Dehradun)</option>
+                                        <option value="Uttar Pradesh(Lucknow)">Uttar Pradesh(Lucknow)</option>
+                                        <option value="West Bengal(Kolkata)">West Bengal(Kolkata)</option>
+                                </select><br>
+                                <label for="Pin_Code">Pin Code:</label><br>
+                                <input name="Pin_Code" id="Pin_Code" type="number" placeholder="Enter Your Pin Code"><br>
+                                <pre><input type="checkbox">The Given Information Of Student Is Correct</pre>
+                                <button type="submit">Submit</button>
 
-            <label for="address">Address:</label>
-            <textarea id="address" name="address" rows="4" required></textarea>
-
-            <input type="submit" value="Submit">
         </form>
     </div>
-    <div class="footer">
-        <b>© Copyright 2023 | ST. XAVIER'S COLLEGIATE SCHOOL | Made By Group 1</b>
+    <div class="developer-contact"> <h4 font-size="30px">Developer Information</h4>
+        <b>Sourya Kumar</b><br>
+        Email: <a href="mailto:souryakumar399@gmail.com">souryakumar399@gmail.com</a>
+        Phone: <a href="tel:9304215811">9304215811</a>
     </div>
+    <section id="footer4-f" >
+        <div class="footer"><b>© Copyright 2023 | ST. XAVIER'S COLLEGIATE SCHOOL | Made By Group 1</b>
+        </div>
+    </section>
 </body>
+
 </html>
